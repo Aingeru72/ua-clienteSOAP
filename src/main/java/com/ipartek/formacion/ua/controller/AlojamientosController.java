@@ -33,7 +33,7 @@ public class AlojamientosController extends HttpServlet {
 
 		// conseguir alojamientos
 		ClaseAlojamiento[] alojamientos = client.wsalojamientos();
-		// System.out.println(alojamientos[0]);
+		// System.out.println(alojamientos[0].getEmailcontacto());
 		
 		// pasar como atributo en request alojamientos
 		request.setAttribute("alojamientos", alojamientos);

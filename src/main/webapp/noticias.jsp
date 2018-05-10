@@ -23,6 +23,13 @@
 
 	<div class="col-sm-4">
 		<h2>Calendario</h2>
+		${festivos}
+<!-- 		<ul> -->
+<%-- 			<c:forEach items="${festivos}" var="festivo" begin="0" end="9"> --%>
+<%-- 				<li>${festivo.nomtipo}</li> --%>
+<%-- 			</c:forEach> --%>
+<!-- 		</ul> -->
+
 	</div>
 
 </div>

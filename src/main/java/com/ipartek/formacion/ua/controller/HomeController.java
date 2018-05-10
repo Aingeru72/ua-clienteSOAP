@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ipartek.formacion.ua.web_service_SOAP.ClaseAlojamiento;
+import com.ipartek.formacion.ua.web_service_SOAP.ClaseDiasFestivos;
 import com.ipartek.formacion.ua.web_service_SOAP.ClaseNoticias;
 import com.ipartek.formacion.ua.web_service_SOAP.Pub_gralSoapProxy;
 
@@ -41,12 +42,13 @@ public class HomeController extends HttpServlet {
 		// conseguir noticias
 		ClaseNoticias[] noticias = client.wsnoticias("C", "");
 		// System.out.println("" + noticias[0].getUrl());
-		// conseguir alojamientos
-		ClaseAlojamiento[] alojamientos = client.wsalojamientos();
+		
+		// conseguir días festivos
+		ClaseDiasFestivos[] festivos = client.wsdiasfestivos("C", "2017-18");
 
 		// pasar como atributo en request noticias
 		request.setAttribute("noticias", noticias);
-		request.setAttribute("alojamientos", alojamientos);
+		request.setAttribute("festivos", festivos);
 
 		request.getRequestDispatcher("noticias.jsp").forward(request, response);
 	}
