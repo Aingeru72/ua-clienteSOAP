@@ -11,7 +11,7 @@
     <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
     
     <!-- custom -->
-    <script src="js/custom.js"></script>
-    
-  </body>
+<!--     <script src="js/custom.js"></script> -->
+
+</body>
 </html>

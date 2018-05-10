@@ -1,6 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-
 <!doctype html>
 <html lang="es">
   <head>
@@ -15,8 +14,8 @@
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/custom.css">
+<!--     <link rel="stylesheet" href="css/custom.css"> -->
 
-    <title>Nidea</title>
+    <title>UA</title>
   </head>
   <body>
